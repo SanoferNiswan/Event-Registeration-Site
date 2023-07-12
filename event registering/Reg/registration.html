@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./registration.css" rel="stylesheet" />
+    <link href="./../navbar.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- <div id="navbar">
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./Comm/Commitee.html">Committee</a>
+            <a href="./callforpaper/callforpaper.html">Call for Papers</a>
+            <a href="./key/keyknote.html">KeyNote</a>
+            <a href="./publication/publication.html">Publication</a>
+            <a href="./Reg/registration.html">Registration</a>
+            
+            <a href="./contact/contact.html">Contact</a>
+            <a class="button" href="./pdf.html">Brochure</a>
+        </div>
+    </div> -->
+    <nav class="navbar navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"style="background-color: rgb(240, 235, 235);">
+              <span  style="background-color: black;"class="icon-bar"></span>
+              <span  style="background-color: black;"class="icon-bar"></span>
+              <span  style="background-color: black;"class="icon-bar"></span>                        
+            </button>
+            <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="./../index.html">Home</a></li>
+              <li class="dropdown"><a href="./../Comm/Commitee.html">Committee</a></li>
+              <li><a href="./../callforpaper/callforpaper.html">Call for Papers</a></li>
+              <li><a href="./../key/keyknote.html">KeyNote</a></li>
+              <li><a href="./../publication/publication.html">Publication</a></li>
+              <li><a href="./registration.html">Registration</a></li>
+              <li><a href="./../dates/dateimp.html">Date</a></li>
+              <li><a href="./../contact/contact.html">Contact</a></li>
+              
+            <!-- </ul> -->
+            <!-- <ul class="nav navbar-nav navbar-right"> -->
+              <li><a class="button" href="./../pdf/28.10.21-Conference-Workshop_Brochure-converted.pdf (6).pdf" download>Brochure</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="card">
+        <div class="text-center"><h1 class="c1"><b>Registration Details</b></h1></div>
+        <h3 class="click"><b>Click Here to Register</b></h3>
+        <button class="register" onclick="reg()" id="reg">Free Registration</button>
+        <hr>
+        <p class="prg" style="text-align: center;"><b>All Paper Presentation delegates should register and pay the registration fee.</b></p>
+        <table class="table">
+            <tr>
+                <th style="text-align: center;border-right: none;">Participant</th>
+                <th style="text-align: center; border-left: none;"></th>
+                <th style="text-align: center; border-left: none;">Registration Fee</th>
+
+                <tr>
+                    <td style="text-align: center; border-right: none;">Workshop participation</td>
+                    <td style="text-align: center; border-left: none;"></td>
+                    <td style="text-align: center; border-left: none;">Free</td>
+                </tr>
+                <tr>
+                    <td rowspan="3" style="text-align: center;">Conference Paper presentation</td>
+                    <td style="text-align: center;">
+                        Indian Deligate
+                    </td>
+                    <td style="text-align: center;">RS.400/-</td>
+
+
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        Foreign Deligate
+                    </td>
+                    <td style="text-align: center;">$20 USD</td>
+                </tr>
+
+        </table>
+        <h2 style="text-align: center; font-size: 22px">DD should be taken in favor of The Principal, Dr. Mahalingam College of Engineering and Technology, Pollachi<br>(Free E-Certificate will be provided to all Participants)</h2>
+        <br>
+
+        <br>
+        <h1 class="c2" style="color: white;text-align: center;background-color: #FE6600"><b>Payment Details</b></h1>
+        <table class="table">
+            <tr>
+                <td>Account Holder Name:</td>
+                <td>The Principal, Dr.MCET</td>
+            </tr>
+            <tr>
+                <td>Account Number:</td>
+                <td>61392200116820</td>
+            </tr>
+            <tr>
+                <td>Account Type:</td>
+                <td>Savings Bank</td>
+            </tr>
+            <tr>
+                <td>Bank name, Branch Name and Country:</td>
+                <td>Syndicate Bank, NPT Branch, MCET-NPT Campus, Udumalai road, Makkinaickenpatti post, Pollachi(T.K), Coimbatore(Dist), Tamilnadu-642003, India.</td>
+            </tr>
+            <tr>
+                <td>IFSC Code:</td>
+                <td>SYNB0006139</td>
+            </tr>
+            <tr>
+                <td>MICR Code:</td>
+                <td>641 025 020</td>
+            </tr>
+            <tr>
+                <td>SWIFT Code(International):</td>
+                <td>SYNBINBB027</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <!-- script for navbar -->
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+        function reg() {
+            window.open("https://forms.gle/uMNc7hrbtKN8qGU59");
+        }
+    </script>
+</body>
+
+</html>

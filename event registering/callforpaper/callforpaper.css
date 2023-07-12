@@ -1,0 +1,52 @@
+.boxai {
+    background: #FE6600;
+    color: white;
+}
+
+td,
+tr {
+    width: 800px;
+}
+
+.td {
+    border: 3px solid black;
+    width: 800px;
+    font-size: 27px;
+    margin-left: 15px;
+    /* text-align: center; */
+    /* padding-left: 20px; */
+}
+
+.td td {
+    border-bottom: 2px solid black;
+}
+
+
+.rowcenterallign {
+    border: 3px solid black;
+    width: 100%;
+    text-align: center;
+    background-color: #FE6600;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.callhead {
+    text-align: center;
+    background-color: rgb(3, 192, 206);
+    width: 38%;
+    color: azure;
+    margin: 0% 30%;
+    box-shadow: 0px 5px 10px gray;
+}
+@media only screen and (max-width: 600px) {
+    
+    .callhead{
+        width:60%;
+        margin: 0 25%;
+    }
+    .td{
+        margin:0  ;
+    }
+  }
